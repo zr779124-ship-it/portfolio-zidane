@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Ahmad Zidane</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 8%;
+            background: #111c32;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        header h2 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 90px 8%;
+        }
+
+        .home {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .home h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .home h1 span {
+            color: #38bdf8;
+        }
+
+        .home p {
+            color: #cbd5e1;
+            line-height: 1.8;
+            max-width: 550px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 13px 25px;
+            background: #38bdf8;
+            color: #0f172a;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: white;
+            transform: translateY(-4px);
+        }
+
+        .section-title {
+            font-size: 32px;
+            margin-bottom: 25px;
+            color: #38bdf8;
+        }
+
+        .about p {
+            color: #cbd5e1;
+            line-height: 1.9;
+            max-width: 750px;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skills-list span {
+            background: #1e293b;
+            padding: 15px 25px;
+            border: 1px solid #38bdf8;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .skills-list span:hover {
+            background: #38bdf8;
+            color: #0f172a;
+            transform: translateY(-5px);
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .project-card {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 12px;
+            flex: 1 1 250px;
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 5px 20px #38bdf833;
+        }
+
+        .project-card h3 {
+            color: #38bdf8;
+            margin-bottom: 12px;
+        }
+
+        .project-card p {
+            color: #cbd5e1;
+            line-height: 1.7;
+        }
+
+        .contact p {
+            color: #cbd5e1;
+            line-height: 2;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #111c32;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 650px) {
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav a {
+                margin: 0 6px;
+                font-size: 13px;
+            }
+
+            .home h1 {
+                font-size: 34px;
+            }
+
+            section {
+                padding: 65px 7%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>ZIDANE.</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="home" id="home">
+            <article>
+                <h1>Hi, I'm <span>Ahmad Zidane</span></h1>
+
+                <h2>Informatics Engineering Student</h2>
+
+                <p>
+                    Welcome to my personal portfolio.
+                    Saya adalah mahasiswa Teknik Informatika
+                    yang tertarik dengan teknologi, programming,
+                    dan pengembangan website.
+                </p>
+
+                <a href="#about" class="button">
+                    Explore My Profile
+                </a>
+            </article>
+        </section>
+
+        <section class="about" id="about">
+            <h2 class="section-title">About Me</h2>
+
+            <p>
+                Halo! Nama saya Ahmad Zidane Revan Aditya.
+                Saya merupakan mahasiswa Universitas Indraprasta PGRI
+                jurusan Teknik Informatika.
+
+                Saya memiliki ketertarikan dalam dunia teknologi,
+                desain, dan pemrograman. Saya senang mempelajari
+                hal baru serta mengembangkan kemampuan diri.
+
+                Selain teknologi, saya juga menyukai gym,
+                traveling, seni, dan menjelajahi coffee shop.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2 class="section-title">My Skills</h2>
+
+            <article class="skills-list">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript (Basic)</span>
+                <span>Microsoft Office</span>
+                <span>Problem Solving</span>
+            </article>
+        </section>
+
+        <section id="projects">
+            <h2 class="section-title">My Projects</h2>
+
+            <article class="projects">
+
+                <article class="project-card">
+                    <h3>Personal Portfolio</h3>
+                    <p>
+                        Membuat website portfolio pribadi
+                        menggunakan HTML, CSS, dan JavaScript.
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <h3>Web Development</h3>
+                    <p>
+                        Latihan membuat halaman website
+                        dengan desain sederhana dan responsif.
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <h3>Programming Project</h3>
+                    <p>
+                        Mempelajari dasar pemrograman melalui
+                        latihan coding dan tugas perkuliahan.
+                    </p>
+                </article>
+
+            </article>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2 class="section-title">Contact Me</h2>
+
+            <p>
+                Interested in collaborating or just want to say hello?
+            </p>
+
+            <p>Email: emailkamu@example.com</p>
+
+            <a href="mailto:zr779124@gmail.com" class="button">
+                Send Me an Email
+            </a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="year"></span> Ahmad Zidane Revan Aditya.
+            All Rights Reserved.
+        </p>
+    </footer>
+
+    <script>
+        // Menampilkan tahun secara otomatis
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+
+        // Efek saat menu diklik
+        document.querySelectorAll("nav a").forEach(link => {
+            link.addEventListener("click", function() {
+                console.log("Menu dibuka: " + this.textContent);
+            });
+        });
+    </script>
+
+</body>
+</html>
